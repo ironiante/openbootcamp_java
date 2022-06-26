@@ -34,12 +34,33 @@ public class Main {
 //   String saludo = obtenerSaludo(nombre,apellido);
   //      System.out.println(saludo);
 //____________________________________________________________________________________________________________________
-
-
-
-
+/**
+ * la sobre carga de funciones permite duplicar un metodo simpre  y cuando tengan diferentes numeros/ tipo de
+ * parametros
+ */
 
     }
+  static double suma(double number1,double number2 , double number3){
+        return number1 + number2 + number3 ; }
+    static int suma(int number1 , int number2 , int number3){
+        return number1 + number2;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//_____________________________________________________________________________________________________________________
 
    static int suma(int number1, int number2) {
         return number1 + number2;
