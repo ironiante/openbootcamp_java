@@ -30,9 +30,9 @@ public class CuentaBancaria {
  //_______________________________________________________________________________
  // establecer alias
 
- void setAliasAlias(String nuevoAlias){
-       if (nuevoAlias !=null){
-           alias= nuevoAlias;
+ void setAliasAlias(String Alias){
+       if (alias !=null){
+          this.alias = alias;
        }
  //__________________________________________________________________________________
  }

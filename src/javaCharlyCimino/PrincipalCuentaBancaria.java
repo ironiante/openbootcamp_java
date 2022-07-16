@@ -7,6 +7,35 @@ CuentaBancaria cb= new CuentaBancaria();
 cb.mostrarDatos();
 cb.setAliasAlias("jirman ");
 cb.mostrarDatos();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cb.mostrarDatos();
+cb.setAliasAlias("jirman ");
+cb.mostrarDatos();
 cb.setAliasAlias(null);
 cb.mostrarDatos();
 String a = cb.getAliasalias(); // pedir solo el alias sin pasar por el metodo datos
