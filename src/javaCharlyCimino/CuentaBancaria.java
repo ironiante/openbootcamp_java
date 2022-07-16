@@ -14,11 +14,11 @@ public class CuentaBancaria {
  * atributos
  */
 //__________________________________________________________________________________________________
-String cbu; // clave bancaria uniforme
-String alias;
-double saldo;
+ private String cbu; // clave bancaria uniforme; mejoramos con accesibilidad
+ private String alias;
+ private double saldo;
 //___________________________________________________________________________________________________
-// 3. creamos un metodo
+// 3. creamos un metodo ( mostrar datos)
     void mostrarDatos(){
         System.out.println(cbu  +   " "   +  alias  +   " "   +  saldo);
     }
@@ -27,6 +27,20 @@ double saldo;
  double obtenerSaldo (){
  return saldo;
  }
+ //_______________________________________________________________________________
+ // establecer alias
+
+ void establecerAlias(String nuevoAlias){
+       if (nuevoAlias !=null){
+           alias= nuevoAlias;
+       }
+ //__________________________________________________________________________________
+ }
+ //obtener alias
+    String obteneralias(){
+        return  alias;
+    }
+
  // 5. metodo depositar con parametros.
     void depositar(double monto){
         if (monto >0){

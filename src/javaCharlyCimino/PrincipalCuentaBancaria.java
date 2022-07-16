@@ -4,8 +4,31 @@ public class PrincipalCuentaBancaria {
     public static void main(String[] args) {
 // creamos un objeto cuenta bancaria.
 CuentaBancaria cb= new CuentaBancaria();
+cb.mostrarDatos();
+cb.establecerAlias("jirman");
+cb.mostrarDatos();
+cb.establecerAlias(null);
+cb.mostrarDatos();
+String a = cb.obteneralias(); // pedir solo el alias sin pasar por el metodo datos
+        System.out.println(a);
 
-cb.mostrarDatos(); // este llamado del metodo por medio del objeto creado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//__________________________________________________________________________
+/* cb.mostrarDatos(); // este llamado del metodo por medio del objeto creado.
 cb.cbu ="2500000000000";
 cb.alias = "mi cuenta";
 cb.mostrarDatos();
@@ -23,7 +46,9 @@ cb.depositar(200);
 cb.extraer(180);
         System.out.println(cb.obtenerSaldo());
         cb.extraer(100);
-        System.out.println(cb.obtenerSaldo());
+        System.out.println(cb.obtenerSaldo()); */
+
+
 
     }
 }
