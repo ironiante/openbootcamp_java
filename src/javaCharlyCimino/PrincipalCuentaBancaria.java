@@ -5,11 +5,11 @@ public class PrincipalCuentaBancaria {
 // creamos un objeto cuenta bancaria.
 CuentaBancaria cb= new CuentaBancaria();
 cb.mostrarDatos();
-cb.establecerAlias("jirman");
+cb.setAliasAlias("jirman ");
 cb.mostrarDatos();
-cb.establecerAlias(null);
+cb.setAliasAlias(null);
 cb.mostrarDatos();
-String a = cb.obteneralias(); // pedir solo el alias sin pasar por el metodo datos
+String a = cb.getAliasalias(); // pedir solo el alias sin pasar por el metodo datos
         System.out.println(a);
 
 

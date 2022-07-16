@@ -19,41 +19,41 @@ public class CuentaBancaria {
  private double saldo;
 //___________________________________________________________________________________________________
 // 3. creamos un metodo ( mostrar datos)
-    void mostrarDatos(){
+   public  void mostrarDatos(){
         System.out.println(cbu  +   " "   +  alias  +   " "   +  saldo);
     }
 //_____________________________________________________________________________________________
  // 4. creamos un metodo con retorno
- double obtenerSaldo (){
+ double getSaldoSaldo (){ //_______________________________________________________
  return saldo;
  }
  //_______________________________________________________________________________
  // establecer alias
 
- void establecerAlias(String nuevoAlias){
+ void setAliasAlias(String nuevoAlias){
        if (nuevoAlias !=null){
            alias= nuevoAlias;
        }
  //__________________________________________________________________________________
  }
  //obtener alias
-    String obteneralias(){
+   public String getAliasalias(){ //________________________________
         return  alias;
     }
 
  // 5. metodo depositar con parametros.
-    void depositar(double monto){
+   public void depositar(double monto){
         if (monto >0){
             saldo = saldo + monto; // o saldo +=monto
         }
 
     }
 //6.  saldo disponible
-boolean saldoDisponible(double monto){
+ public boolean saldoDisponible(double monto){
         return saldo >= monto;
 }
 // metodo extraer
-void extraer (double monto){
+public void extraer (double monto){
         if (saldoDisponible(monto)){
             saldo -= monto;
         }
